@@ -41,10 +41,8 @@ jobs:
       - name: Build
         run: |
           cd micropython
-          git submodule update --init lib/axtls lib/berkeley-db-1.xx
-          cd mpy-cross
-          make
-          cd ../../
+          git submodule update --init --recursive
+          cd ..
           cd micropython/ports/esp32
           make submodules
           source ~/esp/esp-idf/export.sh
