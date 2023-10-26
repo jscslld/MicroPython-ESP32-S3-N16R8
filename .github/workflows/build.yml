@@ -1,4 +1,4 @@
-name: Build MicroPython
+name: Build MicroPython1
 
 on: [push, pull_request]
 
